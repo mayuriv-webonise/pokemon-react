@@ -12,7 +12,7 @@ function PokemonDetails() {
     const fetchDataFromApi = async () => {
       const response = await axios.get(data.url);
       setDetails(response.data);
-      console.log(response);
+  
     };
 
     fetchDataFromApi();

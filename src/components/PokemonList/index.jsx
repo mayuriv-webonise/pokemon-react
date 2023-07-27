@@ -10,7 +10,7 @@ function PokemonList() {
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=0`);
 
       setData(response.data.results);
-      console.log(response.data.results);
+     
     };
 
     fetchDataFromApi();

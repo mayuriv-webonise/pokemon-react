@@ -10,7 +10,7 @@ function DataProvider({ children }) {
   });
 
   const updateData = (newData) => {
-    console.log(newData);
+   
     setData((prevData) => ({ ...prevData, ...newData }));
   };
 
