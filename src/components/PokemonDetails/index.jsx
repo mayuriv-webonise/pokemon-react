@@ -9,6 +9,7 @@ function PokemonDetails() {
   const [details, setDetails] = React.useState({});
 
   React.useEffect(() => {
+    //api call for detail
     const fetchDataFromApi = async () => {
       const response = await axios.get(data.url);
       setDetails(response.data);
